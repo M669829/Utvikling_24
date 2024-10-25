@@ -1,1 +1,1 @@
-dette er en TextDecoderStream
+dette er en test 
