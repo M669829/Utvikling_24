@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velkommen</title>
+</head>
+<body>
+    <h1>Velkommen, <span id="username"></span>!</h1>
+    <p>Du har logget inn med riktig passord.</p>
+    <a href="/logout">Logg ut</a>
+
+    <script>
+        // Henter brukernavn fra session lagret på serversiden
+        document.getElementById('username').innerText = sessionStorage.getItem('username') || 'Bruker';
+    </script>
+</body>
+</html>
