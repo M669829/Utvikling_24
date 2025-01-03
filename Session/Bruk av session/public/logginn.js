@@ -34,6 +34,8 @@ logginnForm.addEventListener('submit', async function (e) {
 
 });
 
+
+
 function showMessage(message) {
     const feilmelding = document.getElementById('error-message');
     feilmelding.textContent = message;

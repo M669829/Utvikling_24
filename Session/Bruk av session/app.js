@@ -89,7 +89,6 @@ app.get('/admin', adminsjekk , (req, res) => {
 });
 
 
-
 app.post('/logginn', (req, res) => {
     const { username, password } = req.body;
 
