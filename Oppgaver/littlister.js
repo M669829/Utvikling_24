@@ -51,5 +51,7 @@ console.log(ordmedbokstav(Ord_2, "o")); // Forventet svar: ["bord", "stol", "sof
 function inneholderStørstetall(liste1, liste2) {
     //Sammenlign liste1 med liste2 og sjekk om liste1 inneholder et større tall en liste2
 }
+ 
 
 console.log(inneholderStørstetall(Tall_1, Tall_2)); // Forventet svar: false (22 > 20)
+//test 
