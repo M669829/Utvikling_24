@@ -1,0 +1,105 @@
+/* Reset styles */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b3954;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#blackjackbilde {
+    margin-top: 20px;
+}
+
+
+#innsatsInput {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #ff6600; /* Oransje ramme */
+    border-radius: 8px; /* Runde kanter */
+    background-color: white;
+    background-image: url('cards/chip.png');
+    background-position: 10px center; /* Justerer bildet til venstre */
+    background-size: 25px 25px; /* Tilpass størrelse på bildet */
+    background-repeat: no-repeat;
+    padding-left: 50px; /* Gir plass til bildet */
+    font-size: 16px; /* Forbedret tekststørrelse */
+    color: #333; /* Tekstfarge */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtil skygge */
+    outline: none; /* Fjern blå kant ved fokus */
+  }
+  
+  #innsatsInput:focus {
+    border-color: #ff4500; /* Endrer farge på rammen ved fokus */
+    box-shadow: 0px 0px 8px rgba(255, 69, 0, 0.5); /* Legger til en glød ved fokus */
+  }
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e64a19;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background: #2e2e2e;
+    padding: 15px;
+    border-radius: 10px;
+    visibility: hidden; /* Initially hidden */
+}
