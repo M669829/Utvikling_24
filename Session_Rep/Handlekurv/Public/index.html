@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlekurv</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🛒 Velkommen til Nettbutikken</h2>
+
+        <div class="form-container">
+            <h3>Legg varer i handlekurven:</h3>
+            <form id="cart-form">
+                <select id="item">
+                    <option value="Eple">🍏 Eple - 10kr</option>
+                    <option value="Banan">🍌 Banan - 8kr</option>
+                    <option value="Appelsin">🍊 Appelsin - 12kr</option>
+                </select>
+                <button type="submit" class="add-button">Legg til</button>
+            </form>
+        </div>
+
+        <div class="cart-container">
+            <h3>Handlekurv</h3>
+            <ul id="cart-list">
+                <li>Henter varer...</li>
+            </ul>
+            <form action="/clear-cart" method="POST">
+                <button type="submit" class="clear-button">🗑 Tøm handlekurv</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

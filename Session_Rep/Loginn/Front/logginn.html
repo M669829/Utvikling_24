@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logg inn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Velkommen tilbake!</h2>
+            <p>Vennligst logg inn for å fortsette</p>
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <label for="username">Brukernavn</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Passord</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Logg inn</button>
+            </form>
+            <p class="back-link"><a href="velkommen.html">Tilbake til hovedsiden</a></p>
+        </div>
+    </div>
+</body>
+</html>
