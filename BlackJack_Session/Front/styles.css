@@ -1,0 +1,136 @@
+/* Reset styles */
+body, h1, p, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Bakgrunnsdesign */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/cards/bakgrunn2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Overskrift */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFD700; /* Gullfarget tittel */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Spilleområde */
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); /* Mørk gjennomsiktig bakgrunn */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Gullglød */
+}
+
+/* Kortcontainer */
+.card-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Kortstil */
+.card {
+    width: 90px;
+    height: 130px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Kort-hover effekt */
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(255, 215, 0, 0.6);
+}
+
+/* Innsatsfeltet */
+#innsatsInput {
+    width: 120px;
+    height: 45px;
+    border: 3px solid #ffcc00; /* Gullfarget ramme */
+    border-radius: 8px;
+    background-color: white;
+    background-image: url('/cards/chip.png'); /* Kort ikon */
+    background-position: 10px center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Fokus effekt på innsatsfelt */
+#innsatsInput:focus {
+    border-color: #ff9900;
+    box-shadow: 0px 0px 12px rgba(255, 153, 0, 0.7);
+}
+
+/* Kontrollknapper */
+.controls {
+    margin-top: 20px;
+}
+
+/* Knappestil */
+button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+}
+
+/* Knapp hover-effekt */
+button:hover {
+    background: #ff4500;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 69, 0, 0.6);
+}
+
+/* Output-boksen */
+#output {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    visibility: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}

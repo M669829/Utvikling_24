@@ -1,0 +1,79 @@
+/* Bakgrunnsstil med bilde */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/cards/bakgrunn.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Hovedcontainer for innloggingsskjemaet */
+.container {
+    background: rgba(0, 0, 0, 0.8); /* Mørk gjennomsiktig bakgrunn */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    color: white;
+}
+
+/* Tittel og tekst */
+h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #FFD700; /* Gullfarget tittel */
+}
+
+.subtext {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Skjemafelt */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Knapp */
+button {
+    padding: 10px;
+    background-color: #FFD700; /* Gull */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #FFA500; /* Oransje */
+}
+
+/* Feilmelding */
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

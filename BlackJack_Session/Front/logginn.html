@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logg Inn - Blackjack</title>
+    <link rel="stylesheet" href="/logginn.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Velkommen til Blackjack 🃏</h1>
+        <p class="subtext">Logg inn for å begynne å spille</p>
+
+        <form id="logginn-form">
+            <label for="username">Brukernavn:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Passord:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Logg Inn</button>
+        </form>
+
+        <p id="error-message"></p>
+    </div>
+
+    <script src="/logginn.js"></script>
+</body>
+</html>

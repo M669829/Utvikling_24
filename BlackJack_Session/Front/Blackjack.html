@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Blackjack</h1>
+    <div class="game-container">
+
+        <div id="playersum" class = "satser">
+            <h3 id="saldo">Saldo:</h3>
+            <h4 id="innsats">Innsats: 0</h4>
+            <input type="number" id="innsatsInput" placeholder="Skriv inn innsats">
+            <button onclick="settInnsats()">Plasser innsats</button>
+        </div>
+        <div id = "blackjackbilde">
+            <img id="startBilde" src="cards/red_Joker.png" alt="Startbilde" style="width: 200px; height: auto; margin-bottom: 10px;">
+        </div>
+        <div id="player-hand" class="card-container">
+            <!-- Spillerens kort vil vises her -->
+        </div>
+        <div id="player-value" class="value-display">
+            <!-- Spillerens verdi vises her -->
+        </div>
+        <div id="dealer-hand" class="card-container">
+            <!-- Dealerens kort vil vises her -->
+        </div>
+        <div id="dealer-value" class="value-display">
+            <!-- Dealerens verdi vises her -->
+        </div>
+        <div class="controls">
+            <button id="start">Start Ny Runde</button>
+            <button id="trekke">Trekke</button>
+            <button id="staa">Stå</button>
+        </div>
+        <div id="output"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
